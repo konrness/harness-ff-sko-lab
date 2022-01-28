@@ -20,14 +20,19 @@
 
   <script>
     $(function() {
+      var email = login();
+      
       // ENTER LAB CODE HERE
 
 
       // THESE FUNCTIONS ENABLE OR DISABLE EACH MODULE
-      enableModule("builds", false);
-      enableModule("feature-flags", true);
-      enableModule("cloud-cost-management", true);
-      enableModule("continuous-verification", true);
+      enableModules();
+      function enableModules() {
+        enableModule("builds", false);
+        enableModule("feature-flags", true);
+        enableModule("cloud-cost-management", true);
+        enableModule("continuous-verification", true);
+      }
 
     });
   </script>
