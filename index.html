@@ -19,6 +19,20 @@
   <script src="./index_files/bootstrap.min.js"></script>
 
   <script>
+    $(function() {
+      // ENTER LAB CODE HERE
+
+
+      // THESE FUNCTIONS ENABLE OR DISABLE EACH MODULE
+      enableModule("builds", false);
+      enableModule("feature-flags", true);
+      enableModule("cloud-cost-management", true);
+      enableModule("continuous-verification", true);
+
+    });
+  </script>
+
+  <script>
     /**
      * Enable or disable a module
      * 
@@ -49,19 +63,6 @@
       return email;
     }
 
-  </script>
-
-  <script>
-    $(function() {
-      // ENTER LAB CODE HERE
-
-
-      enableModule("builds", true);
-      enableModule("feature-flags", true);
-      enableModule("cloud-cost-management", true);
-      enableModule("continuous-verification", true);
-
-    });
   </script>
 
   <div id="root">
